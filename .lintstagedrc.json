@@ -1,5 +1,10 @@
 {
 	"*.{css,md,json}": ["prettier --write"],
-	"*.(t|j)s?(x)": ["eslint", "prettier --write"],
-	"package.json": "npx sort-package-json"
+	"*.(t|j)s?(x)": [
+		"eslint",
+		"prettier --write",
+		"pnpm run test",
+		"pnpm run typecheck"
+	],
+	"package.json": "pnpm sort-package-json"
 }
