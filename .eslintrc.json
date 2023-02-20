@@ -8,7 +8,9 @@
 		"plugin:jsx-a11y/recommended", // Turns on a11y rules for JSX.
 		"plugin:@typescript-eslint/recommended", // Turns on rules from TypeScript-specific plugin.
 		"plugin:prettier/recommended", // Turns off all rules that are unnecessary or might conflict with Prettier.
-		"plugin:sonarjs/recommended"
+		"plugin:sonarjs/recommended",
+		"plugin:jest-dom/recommended",
+		"plugin:testing-library/react"
 	],
 	"plugins": [
 		"react",

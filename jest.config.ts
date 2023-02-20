@@ -20,7 +20,7 @@ export default {
 		"^.+\\.(css|sass|scss|less)$": "<rootDir>/__mocks__/styleMock.js",
 		"^.+\\.(jpg|jpeg|png|gif|webp|avif|svg|ttf|woff|woff2)$":
 			"<rootDir>/__mocks__/fileMock.js",
-		"^@/(.*)$": "<rootDir>/(src|test)/$1",
+		"^@/(.*)$": ["<rootDir>/src/$1", "<rootDir>/test/$1"],
 	},
 	roots: ["<rootDir>/src/", "<rootDir>/test/"],
 	verbose: true,
